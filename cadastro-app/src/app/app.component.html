@@ -1,0 +1,26 @@
+<div>
+  <h2>Cadastro de Categoria</h2>
+  <form (ngSubmit)="cadastrarCategoria()">
+    <label for="nomeCategoria">Nome:</label>
+    <input id="nomeCategoria" [(ngModel)]="categoria.nome" name="nomeCategoria" required />
+    <br />
+    <label for="ativoCategoria">Ativo:</label>
+    <input id="ativoCategoria" [(ngModel)]="categoria.ativo" name="ativoCategoria" type="checkbox" />
+    <br />
+    <button type="submit">Cadastrar Categoria</button>
+  </form>
+
+  <h2>Cadastro de Unidade Federativa</h2>
+  <form (ngSubmit)="cadastrarUnidadeFederativa()">
+    <label for="nomeUF">Nome:</label>
+    <input id="nomeUF" [(ngModel)]="unidadeFederativa.nome" name="nomeUF" required />
+    <br />
+    <label for="siglaUF">Sigla:</label>
+    <input id="siglaUF" [(ngModel)]="unidadeFederativa.sigla" name="siglaUF" required />
+    <br />
+    <label for="ativoUF">Ativo:</label>
+    <input id="ativoUF" [(ngModel)]="unidadeFederativa.ativo" name="ativoUF" type="checkbox" />
+    <br />
+    <button type="submit">Cadastrar Unidade Federativa</button>
+  </form>
+</div>
